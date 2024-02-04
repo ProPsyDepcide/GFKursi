@@ -1,0 +1,651 @@
+
+@mixin train {
+    display: flex;
+    align-items: center;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background: #0B0D17;
+    height: 10vh;
+    padding: 3vh 5vh;
+    @include train;
+    justify-content: space-between;
+    nav{
+        @include train();
+        gap: 2vh;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .trdot{
+            display: none;
+        }
+
+        button{
+            color: white;
+            border-radius: 50px;
+            padding: 1vh 2vh;
+            border:1px solid #31333D;
+            outline: none;
+            background-color: #23252E;
+        }
+
+        .blue{
+            color: #60CDF6;
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo{
+
+    h5{
+        color: rgba(255, 255, 255, 0.377);
+        padding-left: 2vh;
+    }
+    @include train
+}
+
+// ------------------------------------------
+
+.home{
+    position: relative;
+    padding: 10vh 20vh;
+    width: 100%;
+    height: 70vh;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+        color: white;
+        font-size: 50px;
+        
+        button{
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #EF3833;
+            padding: 1vh 3vh;
+            border-radius: 6px;
+        }
+    }
+    h3{
+        padding-top: 2vh;
+        color: white;
+        font-weight: 15;
+        span{
+            text-decoration: underline;
+        }
+    }
+
+    button{
+        margin-top: 5vh;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: #45CCFF;
+        padding: 2vh 5vh;
+        border-radius: 6px;
+    }
+
+    h4{
+        padding-left: 50vh;
+        color: white;
+
+        span{
+            font-weight: 10;
+        }
+    }
+    h5{
+        padding-left: 64vh;
+        color: #60CDF6;
+    }
+
+    img{
+        position: absolute;
+        left: 90vh;
+        top: 54vh;
+    }
+
+}
+
+// ------------------------------------------
+
+.secsec{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    padding: 8vh 10vh;
+
+    .seccontent{
+        h1{
+            color: rgba(0, 0, 0, 0.849);
+        }
+        h3{
+            padding-top: 1vh;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.582);
+        }
+
+        .forbutt{
+
+            margin-top: 3vh;
+
+            h5{
+                color: rgba(0, 0, 0, 0.582);
+                padding-left: 3vh
+            }
+
+            @include train();
+
+
+            button{
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #45CCFF;
+            padding: 2vh 5vh;
+            border-radius: 6px;
+            }
+        }
+    }
+
+    .cont{
+        @include train();
+        justify-content: space-between;
+        .scright{
+            @include train();
+        }
+    }
+
+    .vect{
+        position: absolute;
+        left: 20vh;
+    }
+    
+    iframe{
+        margin-top: 10vh;
+        border-radius: 10px;
+    }
+
+    .player{
+        padding-top: 5vh;
+        @include train();
+        justify-content: space-between;
+    }
+
+    .playercont{
+        position: relative;
+        padding-right: 16vh;
+
+        h1{
+            color: #344054;
+        }
+        h3{
+            color: rgba(0, 0, 0, 0.726);
+            padding-top: 3vh;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .rbb{
+            position: absolute;
+            right: 20vh;
+            bottom: -10vh;
+            width: max-content;
+            border-radius: 50px;
+            border:1px solid #344054;
+            padding: 1vh 2vh;
+            @include train();
+
+            img{
+                padding-left: 2vh;
+            }
+        }
+    }
+ 
+}
+
+.secthree{
+    width: 100%;
+    height: 80vh;
+    background-image: url(/images/bg2.jpg);
+    padding: 1vh 20vh;
+
+    h1{
+        font-size: 40px;
+        color: white;
+        padding-top: 5vh;
+    }
+
+    h3{
+        color: white;
+    }
+
+    h4{
+        font-weight: 200;
+        padding-top: 2vh;
+        color: white;
+    }
+}
+
+
+.number{
+    width: 10vh;
+    position: relative;
+    h1{
+        font-size: 100px;
+    }
+    img{
+        position: absolute;
+        right: -8vh;
+        top: 9vh;
+    }
+
+}
+
+.boxes{
+    @include train();
+    align-items: baseline;
+    gap: 10vh;
+}
+
+// -------------------------------------------------
+
+.secfour{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(228, 228, 228);
+    padding: 5vh 20vh;
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    h5{
+        padding-top: 10vh;
+        @include train();
+        justify-content: center;
+        color: #51555E;
+    }
+
+    .frb{
+        padding-top: 10vh;
+        @include train();
+        justify-content: space-between;
+
+        .korobka{
+            @include train();
+            gap: 3vh;
+        }
+    }
+}
+
+// ------------------------------------------------------------
+
+.secfive{
+    width: 100%;
+    height: 130vh;
+
+    h1{
+        padding-top: 10vh;
+        font-size: 30px;
+        @include train();
+        justify-content: center;
+    }
+    
+    img{
+        padding: 5vh 19vh;
+    }
+
+    .but{
+        text-align: center;
+        button{
+            margin: 0 auto;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #45CCFF;
+            padding: 2vh 5vh;
+            border-radius: 6px;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------
+
+.secsix{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(228, 228, 228);
+    padding: 8vh 20vh;
+
+    h1{
+        @include train();
+        justify-content: center;
+    }
+
+    .firstblock{
+        @include train();
+        padding: 5vh 15vh;
+        .block{
+            .left{
+                border-radius: 0px 10px 10px 0px;
+                position: relative;
+                padding-top: 3vh;
+                padding-left: 3vh;
+                background-color: white;
+                width: 80vh;
+                height: 36vh;
+                .dig{
+                    padding-top: 3vh;
+                    @include train();
+                    gap: 2vh;
+                    .div2{
+                        @include train();
+                        gap: 1vh;
+                    }
+                }
+
+                h5{
+                    padding-top: 3vh;
+                    padding-bottom: 5vh;
+                }
+
+                .botcont{
+                    @include train();
+                    justify-content: space-between;
+                    .rbb2{
+                        h6{
+                            padding-left: 1vh;
+                            color: #344054;
+                        }
+                        width: max-content;
+                        border-radius: 50px;
+                        border:1px solid #344054;
+                        @include train();
+            
+                        img{
+                            padding-left: 2vh;
+                        }
+                    }
+
+                    button{
+                        margin-right: 4vh;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        background-color: #45CCFF;
+                        padding: 1vh 3vh;
+                        border-radius: 6px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.greybox{
+    border-radius: 8px 0px 0px 8px ;
+    top: 5vh;
+    right: 0;
+    position: absolute;
+    padding: 3vh 5vh;
+    width: max-content;
+    @include train();
+    gap: 2vh;
+    background-color: #F1F1F1;
+    h6{
+        color: #828282;
+    }
+}
+
+// ----------------------------------------------------------------------------
+
+.secseven{
+    @include train();
+    gap:0vh;
+    padding-left: 60vh;
+    width: 100%;
+    height: 40vh;
+    background-image: url(/images/Rectangle1227.jpg);
+    .ssleft{
+        h1{
+            font-size: 30px;
+            color: white;
+            span{
+                color: #45CCFF;
+            }
+        }
+
+        h5{
+            padding-top: 2vh;
+            color: #B8BCC5;
+        }
+
+        button{
+            font-size: 17px;
+            margin-top: 5vh;
+            margin-right: 4vh;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #45CCFF;
+            padding: 1vh 3vh;
+            border-radius: 6px;
+        }
+    }
+
+    .ssright{
+        img{
+            width: 70vh;
+        }
+    }
+}   
+
+// ----------------------------------------------------------------------------------
+
+.seceight{
+    @include train();
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10vh 10vh;
+    .seleft{
+        h1{
+            font-size: 35px;
+        }
+        .pblock{
+            position: relative;
+            margin-top: 10vh;
+            border-radius: 10px;
+            width: max-content;
+            box-shadow: 0px 10px 8px 5px rgba(34, 60, 80, 0.2);
+            padding: 6vh 20vh 6vh 6vh;
+            p{
+                padding-top: 3vh;
+            }
+            a{
+                text-decoration: none;
+                color: #4D9FEB;
+            }
+
+            .profile{
+                padding-top: 3vh;
+                @include train();
+                gap: 2vh;
+            }
+            .stars{
+                position: absolute;
+                right: 4vh;
+            }
+        }
+
+        .sliders{
+            padding-top: 10vh;
+            @include train();
+            gap: 8vh;
+        }
+    }
+
+    .seright{
+        @include train();
+        padding-left: 5vh;
+
+        .poster{
+            right: 0;
+            position: absolute;
+        }
+
+        .slide{
+            position: absolute;
+            right: 26vh;
+        }
+    }
+}
+
+// --------------------------------------------------------------------------------------------
+
+footer{
+    @include train();
+    justify-content: space-around;
+    width: 100%;
+    height: 25vh;
+    background-color: #0B0D17;
+    .links{
+        @include train();
+        gap: 5vh;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .blue{
+            text-decoration: underline;
+            color: #60CDF6;
+        }
+
+        button{
+            color: white;
+            border-radius: 50px;
+            padding: 1vh 2vh;
+            border:1px solid #31333D;
+            outline: none;
+            background-color: #23252E;
+        }
+    }
+}
+
+.foot{
+    @include train();
+    align-items: center;
+    padding-left: 10vh;
+    width: 100%;
+    height: 10vh;
+    background-color: #090B14;
+    p{
+        color: #444444;
+    }
+}
+
+// @-----------------------------------------------------------------------------------------
+
+@media (max-width: 900px){
+
+    header{
+        .logo{
+            h5{
+                font-weight: 100;
+            }
+        }
+        nav{
+            display: none;
+
+            .trdot{
+                display: block;
+            }
+        }
+    }
+
+    .home{
+        height: 80vh;
+        padding: 2vh;
+        background-image: url(/images/Rec.jpg);
+        background-size: cover;
+
+        button{
+            position: absolute;
+            margin-top: 47vh;
+        }
+
+        h1{
+            font-size: 40px;
+            button{
+                margin-top: 1vh;
+                margin-left: 2vh;
+            }
+        }
+
+        h3{
+            padding-top: 1vh;
+            font-size: 15px;
+        }
+
+        h4{
+            font-size: 18px;
+            padding-top: 39vh;
+            padding-left: 16vh;
+        }
+        h5{
+            padding-left: 27vh;
+        }
+
+        img{
+            left: 35.7vh;
+            top: 60vh;
+        }
+    }
+
+    .secsec{
+        padding: 0;
+        height: 205vh;
+    }
+
+    .secthree{
+        display: none;
+    }
+
+    .secfour{
+        display: none;
+    }
+
+    .secfive{
+        display: none;
+    }
+
+    .secsix{
+        display: none;
+    }
+
+    .secseven{
+        display: none;
+    }
+
+    .seceight{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+}
