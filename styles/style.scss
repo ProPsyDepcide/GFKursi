@@ -26,10 +26,7 @@ header{
             color: white;
         }
 
-        .trdot{
-            display: none;
-        }
-
+        
         button{
             color: white;
             border-radius: 50px;
@@ -38,11 +35,14 @@ header{
             outline: none;
             background-color: #23252E;
         }
-
+        
         .blue{
             color: #60CDF6;
             text-decoration: underline;
         }
+    }
+    .trdot{
+        display: none;
     }
 }
 

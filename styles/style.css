@@ -22,9 +22,6 @@ header nav a {
   text-decoration: none;
   color: white;
 }
-header nav .trdot {
-  display: none;
-}
 header nav button {
   color: white;
   border-radius: 50px;
@@ -36,6 +33,9 @@ header nav button {
 header nav .blue {
   color: #60CDF6;
   text-decoration: underline;
+}
+header .trdot {
+  display: none;
 }
 
 .logo {
